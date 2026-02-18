@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=CodePatcher
+Comment=Patch code from chat and sync with GitHub
+Exec=/home/skul9x/Desktop/Test_Code/CodePatcher-main/dist/CodePatcher/CodePatcher
+Icon=/home/skul9x/Desktop/Test_Code/CodePatcher-main/logo.ico
+Path=/home/skul9x/Desktop/Test_Code/CodePatcher-main/dist/CodePatcher
+Terminal=false
+Categories=Development;

@@ -1,0 +1,1 @@
+pyinstaller --noconsole --onedir --clean --name="CodePatcher v1.7" --icon="logo.ico" main.py
