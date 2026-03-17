@@ -1,0 +1,22 @@
+# Wails Build
+build/bin
+frontend/dist
+
+# Node
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# App specific
+.patch_backups
+.config.json
+
+# Go
+bin
+*.exe
+*.test

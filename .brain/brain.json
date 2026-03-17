@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "schema_version": "1.1.0",
+    "awf_version": "4.0.2"
+  },
+  "project": {
+    "name": "CodePatcher-Go",
+    "type": "Desktop Application",
+    "status": "Completed & Verified"
+  },
+  "tech_stack": {
+    "framework": "Wails v2",
+    "backend": "Go 1.22.2",
+    "frontend": "React v18, TypeScript, Vite v3",
+    "styling": "Vanilla CSS (VS Code Dark Theme)",
+    "ui_libraries": ["lucide-react", "react-resizable-panels"]
+  },
+  "features": [
+    {
+      "name": "Trình Vá Mã (Patcher Tab)",
+      "status": "Completed",
+      "explained": "Dán mã AI, phân tích code block, xem trước thay đổi, backup tự động và rollback."
+    },
+    {
+      "name": "Đồng Bộ GitHub (GitHub Tab)",
+      "status": "Completed",
+      "explained": "Kiểm tra trạng thái Git, Pull, Commit & Push với xác thực Token."
+    },
+    {
+      "name": "Đa Ngôn Ngữ",
+      "status": "Completed",
+      "explained": "Giao diện đã được Việt hóa toàn bộ (UI Labels, Errors, Titles)."
+    },
+    {
+      "name": "Backup & Rollback",
+      "status": "Completed",
+      "explained": "Cơ chế sao lưu dựa trên Manifest, hỗ trợ hoàn tác 1-click."
+    }
+  ],
+  "api_endpoints": [
+    {
+      "path": "App.SelectProjectDir",
+      "explained": "Mở hộp thoại chọn thư mục dự án."
+    },
+    {
+      "path": "App.ApplyPatch",
+      "explained": "Sao lưu và áp dụng bản vá mã AI vào project."
+    },
+    {
+      "path": "App.GetHistory",
+      "explained": "Lấy danh sách các đợt sao lưu đã thực hiện."
+    },
+    {
+      "path": "App.Rollback",
+      "explained": "Hoàn tác các file về trạng thái trước khi vá."
+    },
+    {
+      "path": "App.GitGetStatus",
+      "explained": "Lấy thông tin Branch và danh sách nhánh Git."
+    }
+  ],
+  "knowledge_items": {
+    "patterns": [
+      "Wails v2 Desktop Bridge",
+      "Manifest-based Backup Engine",
+      "VS Code Theme implementation in Vanilla CSS"
+    ],
+    "gotchas": [
+      "Wails tự động chuyển field sang snake_case khi export Go struct sang TS.",
+      "Cần export đúng các function trong App struct để Wails tự sinh bindings."
+    ]
+  }
+}

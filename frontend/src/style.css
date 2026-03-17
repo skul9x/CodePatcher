@@ -1,0 +1,50 @@
+:root {
+  --bg-color: #1e1e1e;
+  --surface-color: #252526;
+  --border-color: #3c3c3c;
+  --primary-color: #0e639c;
+  --primary-hover: #1177bb;
+  --text-main: #cccccc;
+  --text-muted: #858585;
+  --success-color: #4CAF50;
+  --danger-color: #f14c4c;
+  --warning-color: #cca700;
+  --shadow-none: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  user-select: none;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+/* Custom scrollbar to match VS Code style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e3e3e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4e4e;
+}
